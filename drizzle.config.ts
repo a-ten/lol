@@ -6,8 +6,9 @@ config({ path: '.env' });
 export default defineConfig({
   schema: "./server/schema.ts",
   out: "./server/migrations",
-  dialect: "pg",
+  driver: "pg",
   dbCredentials: {
     url: process.env.POSTGRES_URL!,
+    connectionString: process.env.POSTGRES_URL!,
   },
 });
