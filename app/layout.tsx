@@ -1,6 +1,6 @@
 import "@/app/globals.css";
-import { Inter,ADLaM_Display } from 'next/font/google'
- 
+import { ADLaM_Display } from 'next/font/google'
+
 // If loading a variable font, you don't need to specify the font weight
 const inter = ADLaM_Display({
   subsets: ['latin'],
