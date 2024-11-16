@@ -1,6 +1,6 @@
 import "@/app/globals.css";
 import { ADLaM_Display } from 'next/font/google'
-
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 // If loading a variable font, you don't need to specify the font weight
 const inter = ADLaM_Display({
   subsets: ['latin'],
@@ -18,7 +18,7 @@ export default function RootLayout({
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AntdRegistry>{children}</AntdRegistry>
       </body>
     </html>
   );
