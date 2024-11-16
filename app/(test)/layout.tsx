@@ -1,5 +1,5 @@
-import "./globals.css";
-import Header from '@/../components/header'
+import "../globals.css";
+import Header from '@/app/components/header'
 
 
 export default function RootLayout({
