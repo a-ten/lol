@@ -1,10 +1,10 @@
-import Select from "../components/select";
-
+import HeroList from "../components/herolist";
+import Select from "@/app/components/select/select"
 export default function Home() {
   return (
-    <div>
-      Home
+    <div className="flex">
       <Select></Select>
+      <HeroList></HeroList>
     </div>
   );
 }

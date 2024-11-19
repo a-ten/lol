@@ -7,9 +7,9 @@ const getHeroList = async() => {
   return result
 }
   
-export default function Select() {
+export default function HeroList() {
   const [pool,setPool] = useState<any>([])
-  const listItems = pool.map(hero => <li key={hero.name} >{hero.name}</li>);
+  const listItems = pool.map(hero => <Hero key={hero.name} >{hero.name}</Hero>);
   useEffect(() => {
     getHeroList().then(res => {
       console.log(res)
@@ -21,7 +21,7 @@ export default function Select() {
   }, [pool]);
   return (
     <div>
-      <ul>{ listItems }</ul>
+      { listItems }
     </div>
   )
 }
